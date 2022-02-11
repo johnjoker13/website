@@ -5,7 +5,7 @@ const NavBar = () => {
     <nav>
       <div>
         <Image
-          src="../images/profile-photo.jpeg"
+          src="/profile-photo.jpg"
           alt="foto-joao"
           width={70}
           height={40}

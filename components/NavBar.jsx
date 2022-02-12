@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const NavBar = () => {
   return (
-    <nav>
+    <nav className="">
       <div>
         <Image
           src="/profile-photo.jpg"

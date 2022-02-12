@@ -1,10 +1,12 @@
 import NavBar from "./NavBar";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
     <div className="min-h-screen">
       <NavBar />
-      { children }
+        { children }
+      <Footer />
     </div>
   );
 }

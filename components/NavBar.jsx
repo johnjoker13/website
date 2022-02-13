@@ -1,9 +1,9 @@
+import Link from "next/link"
 import Image from "next/image";
-import Link from "next/link";
 
 const NavBar = () => {
   return (
-    <nav className="flex sticky justify-center w-screen">
+    <nav className="flex sticky justify-center w-screen p-3">
       <div 
         className="flex 
           justify-between
@@ -15,10 +15,11 @@ const NavBar = () => {
       >
         <div>
           <Image
+            className="rounded-full"
             src="/profile-photo.jpg"
             alt="foto-joao"
-            width={70}
-            height={40}
+            width="64"
+            height="64"
           />
         </div>
 

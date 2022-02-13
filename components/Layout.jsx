@@ -5,10 +5,10 @@ const Layout = ({ children }) => {
   return (
     <div
       className="
-      min-h-screen 
+      max-w-screen
+      min-h-screen
       m-0 
       p-0 
-      box-border 
       bg-white 
       font-Nunito
       text-smooth-black

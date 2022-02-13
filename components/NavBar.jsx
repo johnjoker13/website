@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <nav className="flex flex-wrap sticky justify-center w-screen p-3">
       <div
-        className="xl:flex
+        className="flex
           flex-wrap
           justify-between
           items-center
@@ -14,7 +14,7 @@ const NavBar = () => {
           p-3
           border-b"
       >
-        <div className="">
+        <div>
           <div>
             <Image
               className="rounded-full"

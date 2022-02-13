@@ -3,9 +3,10 @@ import Image from "next/image";
 
 const NavBar = () => {
   return (
-    <nav className="flex sticky justify-center w-screen p-3">
+    <nav className="flex flex-wrap sticky justify-center w-screen p-3">
       <div
-        className="flex 
+        className="flex
+          flex-wrap
           justify-between
           items-center
           space-x-6
@@ -13,48 +14,51 @@ const NavBar = () => {
           p-3
           border-b"
       >
-        <div>
-          <Image
-            className="rounded-full"
-            src="/profile-photo.jpg"
-            alt="foto-joao"
-            width="64"
-            height="64"
-          />
+        <div className="m-0">
+          <div>
+            <Image
+              className="rounded-full"
+              src="/profile-photo.jpg"
+              alt="foto-joao"
+              width="64"
+              height="64"
+            />
+          </div>
         </div>
 
-        <div className="flex space-x-4 text-lg">
+        <div className="text-center space-x-6 text-lg">
           <Link href="/about">
-            <a className="hover:font-bold
-              hover:border-b
-              hover:border-sky-600
-              hover: transition
-              hover: origin-left
+            <a
+              className="
+              hover:underline
+              hover:decoration-sky-600
+              hover:transition
               hover:delay-75
-              ">About</a>
+              "
+            >
+              About
+            </a>
           </Link>
 
           <Link href="/projects">
             <a
-              className="hover:font-bold
-              hover:border-b
-              hover:border-sky-600
-              hover: transition
-              hover: origin-left
+              className="
+              hover:underline
+              hover:decoration-sky-600
+              hover:transition
               hover:delay-75
-              "
+               "
             >
               Projects
             </a>
           </Link>
 
-          <Link href="/contact">
+          <Link href="/contact" className="m-0">
             <a
-              className="hover:font-bold
-              hover:border-b
-              hover:border-sky-600
-              hover: transition
-              hover: origin-left
+              className="
+              hover:underline
+              hover:decoration-sky-600
+              hover:transition
               hover:delay-75
               "
             >

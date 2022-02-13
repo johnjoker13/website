@@ -14,7 +14,7 @@ export default function Home() {
               <p className="text-3xl">
                 I&apos;m a Full-Stack development student looking for my first
                 job.
-                <p>Hire me?</p>
+                <span>Hire me?</span>
               </p>
               <Image
                 src="/devArt.svg"

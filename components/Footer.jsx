@@ -16,13 +16,21 @@ const Footer = () => {
         <div className="flex space-x-4 text-lg font-semibold">
           <a
             href="https://github.com/johnjoker13"
-            className="hover:font-bold hover:underline hover:decoration-sky-600"
+            className="hover:underline
+            hover:decoration-sky-600
+            hover:transition
+            hover:delay-75
+            hover:text-black"
           >
             Github
           </a>
           <a
             href="https://www.linkedin.com/in/joão-oliveira-14a27b1a0"
-            className="hover:font-bold hover:underline hover:decoration-sky-600"
+            className="hover:underline
+            hover:decoration-sky-600
+            hover:transition
+            hover:delay-75
+            hover:text-black"
           >
             Linkedin
           </a>

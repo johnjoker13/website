@@ -5,7 +5,7 @@ const NavBar = () => {
   return (
     <nav className="flex flex-wrap sticky justify-center w-screen p-3">
       <div
-        className="flex
+        className="xl:flex
           flex-wrap
           justify-between
           items-center
@@ -14,7 +14,7 @@ const NavBar = () => {
           p-3
           border-b"
       >
-        <div className="m-0">
+        <div className="">
           <div>
             <Image
               className="rounded-full"
@@ -34,6 +34,7 @@ const NavBar = () => {
               hover:decoration-sky-600
               hover:transition
               hover:delay-75
+              hover:text-black
               "
             >
               About
@@ -47,6 +48,7 @@ const NavBar = () => {
               hover:decoration-sky-600
               hover:transition
               hover:delay-75
+              hover:text-black
                "
             >
               Projects
@@ -60,6 +62,7 @@ const NavBar = () => {
               hover:decoration-sky-600
               hover:transition
               hover:delay-75
+              hover:text-black
               "
             >
               Contact

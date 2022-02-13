@@ -5,7 +5,9 @@ const Layout = ({ children }) => {
   return (
     <div
       className="
-      max-w-screen
+      flex
+      flex-col
+      min-w-screen
       min-h-screen
       m-0 
       p-0 

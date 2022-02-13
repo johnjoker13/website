@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const NavBar = () => {
   return (
-    <nav className="flex flex-wrap sticky justify-center w-screen p-3">
+    <nav className="flex flex-wrap sticky justify-center p-3">
       <div
         className="flex
           flex-wrap

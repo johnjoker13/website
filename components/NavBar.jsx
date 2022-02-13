@@ -96,7 +96,22 @@ const NavBar = () => {
           </div>
         </div>
       </div>
-      <div className="mobile-menu flex flex-col text-center hidden">
+      <div
+        className="
+          mobile-menu
+          w-full
+          text-2xl
+          space-y-2
+          flex
+          flex-col 
+          text-center
+          font-bold
+          text-slate-900
+          hidden
+          p-2
+          border-b
+        "
+      >
         <Link href="/about">
           <a>About</a>
         </Link>

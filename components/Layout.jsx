@@ -3,7 +3,7 @@ import Footer from "./Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div className="min-h-screen font-Nunito">
+    <div className="min-h-screen bg-white font-Nunito">
       <NavBar />
         { children }
       <Footer />

@@ -5,35 +5,37 @@ export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center pb-12">
       <main className="flex flex-row w-3/5 mt-8">
-        <article className="flex flex-col">
+        <article className="flex flex-col space-y-4">
           <section className="text-4xl">
-            <h1 className="text-slate-900 font-bold">
+            <h1 className="text-slate-900 font-bold pb-6">
               Hello! I&apos;m João, a Brazilian developer based in São Paulo.
             </h1>
-            <section className="flex flex-row items-center justify-between">
+            <section className="flex flex-row items-center pb-6">
               <p className="text-3xl">
                 I&apos;m a Full-Stack development student looking for my first
                 job.
                 <span>Hire me?</span>
               </p>
-              <Image
-                src="/devArt.svg"
-                alt="developer coding"
-                width="350"
-                height="350"
-              />
+              <div className="hidden md:block">
+                <Image
+                  src="/devArt.svg"
+                  alt="developer coding"
+                  width="350"
+                  height="350"
+                />
+              </div>
             </section>
           </section>
 
           <div
             className="
               flex
-              justify-center
               flex-wrap
-              space-x-4
+              md:space-x-6
               w-6/12
               mt-6
               items-center
+              justify-between
               text-center
             "
           >

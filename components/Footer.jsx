@@ -3,10 +3,11 @@ const Footer = () => {
     <footer className="flex flex-col items-center mt-auto max-w-screen">
       <div
         className="flex
+          flex-wrap
           justify-between
           items-center
           space-x-8
-          w-1/4
+          md:w-3/6
           pb-12
           font-Nunito"
       >

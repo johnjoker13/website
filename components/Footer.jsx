@@ -14,8 +14,8 @@ const Footer = () => {
           <p>João Oliveira</p>
         </div>
         <div className="flex space-x-4 text-lg font-semibold">
-          <p>Github</p>
-          <p>Linkedin</p>
+          <a href="https://github.com/johnjoker13">Github</a>
+          <a href="https://www.linkedin.com/in/joão-oliveira-14a27b1a0">Linkedin</a>
         </div>
       </div>
     </footer>

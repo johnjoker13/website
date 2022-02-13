@@ -1,10 +1,10 @@
-import Link from "next/link"
+import Link from "next/link";
 import Image from "next/image";
 
 const NavBar = () => {
   return (
     <nav className="flex sticky justify-center w-screen p-3">
-      <div 
+      <div
         className="flex 
           justify-between
           items-center
@@ -25,15 +25,41 @@ const NavBar = () => {
 
         <div className="flex space-x-4 text-lg">
           <Link href="/about">
-            <a>About</a>
+            <a className="hover:font-bold
+              hover:border-b
+              hover:border-sky-600
+              hover: transition
+              hover: origin-left
+              hover:delay-75
+              ">About</a>
           </Link>
 
           <Link href="/projects">
-            <a>Projects</a>
+            <a
+              className="hover:font-bold
+              hover:border-b
+              hover:border-sky-600
+              hover: transition
+              hover: origin-left
+              hover:delay-75
+              "
+            >
+              Projects
+            </a>
           </Link>
 
           <Link href="/contact">
-            <a>Contact</a>
+            <a
+              className="hover:font-bold
+              hover:border-b
+              hover:border-sky-600
+              hover: transition
+              hover: origin-left
+              hover:delay-75
+              "
+            >
+              Contact
+            </a>
           </Link>
         </div>
       </div>

@@ -9,7 +9,7 @@ const NavBar = () => {
 
   return (
     <nav className="flex flex-col justify-center items-center">
-      <div className="flex flex-wrap justify-center sticky w-4/5 p-3">
+      <div className="flex flex-wrap justify-center sticky md:w-4/5 p-3">
         <div
           className="flex
           flex-wrap
@@ -17,9 +17,9 @@ const NavBar = () => {
           items-center
           border-b
           space-x-6
-          w-3/5
+          md:w-4/5
+          w-screen
           p-3
-          md:w-full
           "
         >
           <div>

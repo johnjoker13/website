@@ -33,7 +33,7 @@ const NavBar = () => {
           </div>
 
           <div className="md:hidden flex items-center">
-            <button className="mobile-menu-button" onClick={toggleMobile}>
+            <button type="button" className="mobile-menu-button" onClick={toggleMobile}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"

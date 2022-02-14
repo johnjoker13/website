@@ -11,6 +11,7 @@ module.exports = {
 
       colors: {
         "smooth-black": "#212529",
+        "smooth-grey": "#cecece",
       },
 
       screens: {

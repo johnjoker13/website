@@ -103,11 +103,11 @@ const NavBar = () => {
           text-2xl
           space-y-2
           flex
+          md:hidden
           flex-col 
           text-center
           font-bold
           text-slate-900
-          hidden
           p-2
           border-b
         "

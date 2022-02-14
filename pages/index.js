@@ -51,6 +51,7 @@ export default function Home() {
                   font-bold
                   hover:bg-white
                   hover:text-slate-900
+                  hover:border-smooth-grey
                   hover:transition
                   hover:delay-100
                 "
@@ -63,6 +64,7 @@ export default function Home() {
                 className="
                   flex-1
                   border
+                  border-smooth-grey
                   rounded-md
                   bg-white
                   text-slate-900

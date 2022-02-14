@@ -3,6 +3,9 @@ module.exports = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+
+  darkMode: "class",
+
   theme: {
     extend: {
       fontFamily: {
@@ -10,8 +13,9 @@ module.exports = {
       },
 
       colors: {
-        "smooth-black": "#212529",
+        "smooth-black": "#22272e",
         "smooth-grey": "#cecece",
+        "light-grey": "#adbac7",
       },
 
       screens: {

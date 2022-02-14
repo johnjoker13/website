@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import Toggle from "../components/ThemeToggle";
 
 const NavBar = () => {
   const toggleMobile = () => {
@@ -51,15 +52,18 @@ const NavBar = () => {
             </button>
           </div>
 
-          <div className="hidden md:flex text-center space-x-6 text-lg">
+          <div className="hidden items-center md:flex text-center space-x-6 text-lg">
             <Link href="/about">
               <a
                 className="
               hover:underline
+              dark:text-white
               hover:decoration-sky-600
+              hover:dark:decoration-smooth-grey
               hover:transition
               hover:delay-75
               hover:text-black
+              hover:dark:text-white
               "
               >
                 About
@@ -70,10 +74,13 @@ const NavBar = () => {
               <a
                 className="
               hover:underline
+              dark:text-white
               hover:decoration-sky-600
+              hover:dark:decoration-smooth-grey
               hover:transition
               hover:delay-75
               hover:text-black
+              hover:dark:text-white
                "
               >
                 Projects
@@ -84,15 +91,19 @@ const NavBar = () => {
               <a
                 className="
               hover:underline
+              dark:text-white
               hover:decoration-sky-600
+              hover:dark:decoration-smooth-grey
               hover:transition
               hover:delay-75
               hover:text-black
+              hover:dark:text-white
               "
               >
                 Contact
               </a>
             </Link>
+            <Toggle />
           </div>
         </div>
       </div>

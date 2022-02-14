@@ -10,7 +10,7 @@ export default function Home() {
         <main className="flex flex-row flex-wrap w-3/5 mt-8">
           <article className="flex flex-col space-y-4 ">
             <section className="text-6xl">
-              <h1 className="text-slate-900 font-bold">
+              <h1 className="text-slate-900 dark:text-white font-bold">
                 Hello! I&apos;m João, a Brazilian developer based in São Paulo.
               </h1>
               <section className="flex flex-row items-center my-6 my:pt-0">

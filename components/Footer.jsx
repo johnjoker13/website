@@ -12,16 +12,20 @@ const Footer = () => {
           font-Nunito"
       >
         <div className="text-lg">
-          <p>João Oliveira</p>
+          <p className="text-slate-900 dark:text-white">João Oliveira</p>
         </div>
         <div className="flex space-x-4 text-lg font-semibold">
           <a
             href="https://github.com/johnjoker13"
             className="hover:underline
+            
             hover:decoration-sky-600
             hover:transition
             hover:delay-75
-            hover:text-black"
+            hover:text-black
+            hover:dark:text-white
+            hover:dark:decoration-smooth-grey
+            dark:text-white"
           >
             Github
           </a>
@@ -31,7 +35,10 @@ const Footer = () => {
             hover:decoration-sky-600
             hover:transition
             hover:delay-75
-            hover:text-black"
+            hover:text-black
+            hover:dark:text-white
+            hover:dark:decoration-smooth-grey
+            dark:text-white"
           >
             Linkedin
           </a>

@@ -1,9 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
+import SiteHead from "../components/SiteHead";
 
 export default function Home() {
   return (
     <div className="flex flex-col justify-center items-center pb-12">
+      <SiteHead routeTitle="Homepage" />
       <main className="flex flex-row w-3/5 mt-8">
         <article className="flex flex-col space-y-4">
           <section className="text-4xl">

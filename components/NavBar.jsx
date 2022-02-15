@@ -61,7 +61,7 @@ const NavBar = () => {
           </div>
 
           <div className="hidden items-center md:flex text-center space-x-6 text-lg">
-            <Link href="/about">
+            <Link href="#about">
               <a
                 className="
               hover:underline

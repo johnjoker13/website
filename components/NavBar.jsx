@@ -115,8 +115,10 @@ const NavBar = () => {
           space-y-2
           flex
           md:hidden
+          dark:text-white
           flex-col 
           text-center
+          items-center
           font-bold
           text-slate-900
           p-2
@@ -132,6 +134,7 @@ const NavBar = () => {
         <Link href="/contact">
           <a>Contact</a>
         </Link>
+        <Toggle />
       </div>
     </nav>
   );

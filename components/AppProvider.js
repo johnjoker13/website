@@ -1,7 +1,7 @@
 import AppContext from "../Context/AppContext";
 import { useState, useEffect } from "react";
 
-// this component was built by following this tutorial:
+// this component was built following this tutorial:
 // https://javascript.plainenglish.io/light-and-dark-mode-in-react-web-application-with-tailwind-css-89674496b942
 
 const AppProvider = ({ initialTheme, children }) => {

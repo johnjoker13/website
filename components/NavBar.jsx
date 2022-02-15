@@ -24,17 +24,25 @@ const NavBar = () => {
           "
         >
           <div>
-            <Image
-              className="rounded-full"
-              src="/profile-photo.jpg"
-              alt="foto-joao"
-              width="64"
-              height="64"
-            />
+            <Link href="/">
+              <a>
+                <Image
+                  className="rounded-full"
+                  src="/profile-photo.jpg"
+                  alt="foto-joao"
+                  width="64"
+                  height="64"
+                />
+              </a>
+            </Link>
           </div>
 
           <div className="md:hidden flex items-center">
-            <button type="button" className="mobile-menu-button" onClick={toggleMobile}>
+            <button
+              type="button"
+              className="mobile-menu-button"
+              onClick={toggleMobile}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"

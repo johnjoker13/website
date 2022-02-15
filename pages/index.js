@@ -92,7 +92,7 @@ export default function Home() {
             About Me
           </h3>
           <article className="flex md:flex-row flex-col-reverse gap-6 space-x-6">
-            <figure>
+            <figure className="h-full">
               <Image
                 src="/profile-photo.jpg"
                 alt="joao's photo"

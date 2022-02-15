@@ -8,12 +8,12 @@ export default function Home() {
       <SiteHead routeTitle="Homepage" />
       <main className="flex flex-col m-auto w-3/5 pb-12 gap-36">
         <section className="flex flex-row flex-wrap mt-8">
-          <article className="flex flex-col space-y-4 ">
-            <section className="text-6xl">
+          <section className="flex flex-col space-y-4 ">
+            <article className="text-6xl">
               <h1 className="text-slate-900 dark:text-white font-bold">
                 Hello! I&apos;m João, a Brazilian developer based in São Paulo.
               </h1>
-              <section className="flex flex-row items-center my-6">
+              <article className="flex flex-row items-center my-6">
                 <p className="text-4xl">
                   I&apos;m a Full Stack development student looking for my first
                   job.
@@ -27,10 +27,10 @@ export default function Home() {
                     height="350"
                   />
                 </div>
-              </section>
-            </section>
+              </article>
+            </article>
 
-            <div
+            <section
               className="
               flex
               flex-wrap
@@ -83,33 +83,29 @@ export default function Home() {
                   Linkedin
                 </a>
               </Link>
-            </div>
-          </article>
+            </section>
+          </section>
         </section>
 
         <section className="flex flex-col gap-8 w-full" id="about">
           <h3 className="text-5xl text-slate-900 dark:text-white font-bold">
             About Me
           </h3>
-          <article className="md:flex-row flex flex-col-reverse gap-6 md:space-x-8">
+          <article className="flex md:flex-row flex-col-reverse gap-6 space-x-6">
             <figure>
               <Image
-                className="md:rounded-full"
                 src="/profile-photo.jpg"
                 alt="joao's photo"
-                width="600"
-                height="600"
+                width="400"
+                height="400"
               />
             </figure>
-            <article>
-              <article className="text-3xl mb-6">
+            <article className="w-full">
+              <article className="text-3xl mb-6 w-full text-left">
                 <p>
                   I&apos;m João Oliveira a front end developer and a full stack
-                  development student based in São Paulo.
-                </p>
-                <p>
-                  My interest in programming started back in 2021, when i got
-                  into{" "}
+                  development student based in São Paulo. My interest in
+                  programming started back in 2021, when i got into{" "}
                   <a
                     href="https://www.betrybe.com"
                     target="_blank"
@@ -118,11 +114,8 @@ export default function Home() {
                   >
                     Trybe
                   </a>
-                  , a programming school.
-                </p>
-                <p>
-                  I&apos;m passionate about learning new things, and solving
-                  challenging problems.
+                  , a programming school. I&apos;m passionate about learning new
+                  things, and solving challenging problems.
                 </p>
               </article>
               <article className="flex flex-col flex-wrap space-y-4 max-w-full">
@@ -134,12 +127,11 @@ export default function Home() {
                   <ul className="list-disc">
                     <li>Javascript (ES6+)</li>
                     <li>React JS</li>
-                    <li>Redux/Context</li>
+                    <li>Redux/Context API</li>
                   </ul>
                   <ul className="list-disc">
                     <li>Next JS</li>
-                    <li>Tailwind</li>
-                    <li>Docker</li>
+                    <li>Tailwind CSS</li>
                   </ul>
                 </div>
               </article>

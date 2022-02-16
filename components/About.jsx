@@ -23,7 +23,7 @@ const About = () => {
               <p>
                 I&apos;m a front end developer and a full stack development
                 student from São Paulo. My interest in programming started back
-                in 2021, when i got into{" "}
+                in 2021, when I joined {" "}
                 <a
                   href="https://www.betrybe.com"
                   target="_blank"

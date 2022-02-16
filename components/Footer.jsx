@@ -4,7 +4,8 @@ const Footer = () => {
       <div
         className="flex
           flex-wrap
-          justify-between
+          md:justify-between
+          justify-center
           items-center
           space-x-8
           md:w-3/6
@@ -12,7 +13,7 @@ const Footer = () => {
           font-Nunito"
       >
         <div className="text-lg">
-          <p className="text-slate-900 dark:text-white">Built with Next.js, Tailwind CSS and &#10084;</p>
+          <p className="text-slate-900 w-full dark:text-white">Built with Next.js, Tailwind CSS and &#10084;</p>
         </div>
         <div className="flex space-x-4 text-lg font-semibold">
           <a

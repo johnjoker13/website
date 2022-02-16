@@ -22,7 +22,7 @@ const NavBar = () => {
       justify-center
       items-center
       fixed
-      bg-white
+      bg-smooth-white
       dark:bg-smooth-black
       z-40
       border-b"

@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
       p-0
       gap-16
       max-w-screen
-      bg-white
+      bg-smooth-white
       dark:bg-smooth-black
       dark:text-light-grey
       font-Nunito

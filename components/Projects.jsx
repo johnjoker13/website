@@ -2,7 +2,8 @@ import Image from "next/image";
 
 const Projects = () => {
   return (
-    <section id="projects" className="w-full space-y-10">
+    <div id="projects" className="pt-32">
+    <section className="w-full space-y-10">
       <h3 className="text-5xl text-slate-900 dark:text-white font-bold">
         Projects
       </h3>
@@ -58,6 +59,7 @@ const Projects = () => {
         </div>
       </article>
     </section>
+    </div>
   );
 };
 

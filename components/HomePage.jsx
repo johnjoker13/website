@@ -13,8 +13,8 @@ const HomePage = () => {
             Hello! I&apos;m João, a Brazilian developer based in São Paulo.
           </h1>
           <article className="flex flex-row items-center">
-            <p className="text-4xl">
-              I&apos;m a Full Stack development student looking for my first
+            <p className="text-4xl text-light-grey">
+              I&apos;m a Front End developer and Full Stack development student looking for my first
               job.
             </p>
             <div className="hidden md:block">

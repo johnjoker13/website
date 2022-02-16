@@ -6,7 +6,7 @@ import Skills from "../components/Skills";
 
 export default function Home() {
   return (
-    <main className="flex flex-col m-auto justify-center w-4/5 pb-12 gap-36">
+    <main className="flex flex-col m-auto justify-center w-4/5 pb-12 gap-20">
       <HomePage />
       <About />
       <Projects />

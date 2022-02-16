@@ -1,6 +1,7 @@
 import { useFormik } from "formik";
 import * as yup from "yup";
 import { useState } from "react";
+import Header from "./Header";
 
 const Contact = () => {
   const [message, setMessage] = useState("");
@@ -30,11 +31,10 @@ const Contact = () => {
   return (
     <div id="contact" className="pt-32">
       <div className="flex flex-col items-center gap-8">
-        <header>
-          <h3 className="text-5xl text-slate-900 dark:text-white font-bold">
-            Contact
-          </h3>
-        </header>
+        <Header 
+          headerClass="text-5xl text-slate-900 dark:text-white font-bold"
+          headerText="Contact"
+        />
         <div
           hidden={!submitted}
           role="alert"

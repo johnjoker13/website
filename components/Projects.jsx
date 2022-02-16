@@ -1,12 +1,14 @@
 import Image from "next/image";
+import Header from "./Header";
 
 const Projects = () => {
   return (
     <div id="projects" className="pt-32">
     <section className="w-full space-y-10">
-      <h3 className="text-5xl text-slate-900 dark:text-white font-bold">
-        Projects
-      </h3>
+      <Header 
+        headerClass="text-5xl text-slate-900 dark:text-white font-bold"
+        headerText="Projects"
+      />
       <article className="w-full">
         <div
           className="max-w-sm

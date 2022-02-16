@@ -11,12 +11,16 @@ import {
   SiTailwindcss,
   SiBootstrap,
 } from "react-icons/si";
+import Header from "./Header";
 
 const Skills = () => {
   return (
     <div id="skills" className="pt-32">
     <section className="flex flex-col justify-center w-full gap-10">
-        <h1 className="text-5xl text-slate-900 dark:text-white font-bold">Skills</h1>
+        <Header 
+          headerClass="text-5xl text-slate-900 dark:text-white font-bold"
+          headerText="Skills"
+        />
       <section className="grid grid-cols-4 w-3/4 gap-4 text-4xl m-auto">
         <Link href="https://developer.mozilla.org/en-US/docs/Web/HTML"><a><AiFillHtml5 /></a></Link>
         <Link href="https://developer.mozilla.org/en-US/docs/Web/CSS"><a><DiCss3 /></a></Link>

@@ -1,14 +1,14 @@
 import Image from "next/image";
+import Header from "./Header";
 
 const About = () => {
   return (
     <div id="about" className="pt-32">
       <section className="flex flex-col gap-6">
-        <header>
-          <h3 className="text-5xl text-slate-900 dark:text-white font-bold">
-            About Me
-          </h3>
-        </header>
+        <Header 
+          headerClass="text-5xl text-slate-900 dark:text-white font-bold"
+          headerText="About"
+        />
         <article className="flex md:flex-row flex-col-reverse gap-6 md:space-x-6">
           <figure className="h-full">
             <Image

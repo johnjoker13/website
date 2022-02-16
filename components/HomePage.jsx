@@ -6,14 +6,14 @@ const HomePage = () => {
   return (
     <>
     <SiteHead routeTitle="Homepage" />
-    <section className="flex flex-row flex-wrap justify-center pt-40">
+    <section className="flex flex-row flex-wrap justify-center pt-32">
       <section className="flex flex-col">
         <article className="text-6xl">
           <h1 className="text-slate-900 dark:text-white font-bold">
             Hello! I&apos;m João, a Brazilian developer based in São Paulo.
           </h1>
           <article className="flex flex-row items-center">
-            <p className="text-4xl text-light-grey">
+            <p className="text-4xl text-slate-700 dark:text-light-grey" >
               I&apos;m a Front End developer and Full Stack development student looking for my first
               job.
             </p>

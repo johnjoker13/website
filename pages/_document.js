@@ -10,9 +10,8 @@ export default class MyDocument extends Document {
             name="description"
             content="Welcome to my website where i share my projects and learnings"
           />
-          <link rel="icon" href="/coding.png" type="image/icon type" />
         </Head>
-        <body className="bg-white">
+        <body>
           <Main />
           <NextScript />
         </body>

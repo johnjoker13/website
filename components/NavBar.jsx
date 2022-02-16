@@ -165,7 +165,7 @@ const NavBar = () => {
           p-2
           border
           absolute
-          mt-64
+          mt-72
           z-40
         "
       >

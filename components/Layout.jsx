@@ -12,7 +12,9 @@ const Layout = ({ children }) => {
       min-w-screen
       min-h-screen
       m-0 
-      p-0 
+      p-0
+      gap-16
+      max-w-screen
       bg-white
       dark:bg-smooth-black
       dark:text-light-grey

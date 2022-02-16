@@ -16,14 +16,22 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="flex flex-col justify-center items-center">
-      <div className="flex flex-wrap justify-center md:w-4/5 p-3">
+    <nav className="
+      flex
+      flex-col
+      justify-center
+      items-center
+      fixed
+      bg-white
+      dark:bg-smooth-black
+      z-40
+      border-b">
+      <div className="flex flex-wrap justify-center w-screen">
         <div
           className="flex
           flex-wrap
           justify-between
           items-center
-          border-b
           space-x-6
           md:w-4/5
           w-screen
@@ -131,13 +139,18 @@ const NavBar = () => {
           flex
           md:hidden
           dark:text-white
+          bg-white
+          dark:bg-smooth-black
           flex-col 
           text-center
           items-center
           font-bold
           text-slate-900
           p-2
-          border-b
+          border
+          absolute
+          mt-64
+          z-40
         "
       >
         <Link href="#about">

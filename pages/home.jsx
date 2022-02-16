@@ -5,7 +5,7 @@ import SiteHead from "../components/SiteHead";
 const HomePage = () => {
   return (
     <>
-    <SiteHead routeTitle="home" />
+    <SiteHead routeTitle="Portfolio" />
     <section className="flex flex-row flex-wrap justify-center pt-32">
       <section className="flex flex-col">
         <article className="text-6xl">

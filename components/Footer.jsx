@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-center mt-auto max-w-screen">
+    <footer className="flex flex-col items-center mt-auto pt-36 max-w-screen">
       <div
         className="flex
           flex-wrap
@@ -12,7 +12,7 @@ const Footer = () => {
           font-Nunito"
       >
         <div className="text-lg">
-          <p className="text-slate-900 dark:text-white">João Oliveira</p>
+          <p className="text-slate-900 dark:text-white">Built with Next.js, Tailwind CSS and &#10084;</p>
         </div>
         <div className="flex space-x-4 text-lg font-semibold">
           <a

@@ -37,7 +37,9 @@ const Projects = () => {
               Redux that performs a CRUD on a list of expenses.
             </p>
             <a
-              href="#"
+              href="https://github.com/johnjoker13/TrybeWallet"
+              target="_blank"
+              rel="noreferrer"
               className="
               inline-flex 
               items-center 

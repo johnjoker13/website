@@ -1,8 +1,15 @@
 import Link from "next/link";
 import Image from "next/image";
 import Toggle from "../components/ThemeToggle";
+import { useEffect } from "react";
 
 const NavBar = () => {
+
+  useEffect(() => {
+    const menu = document.querySelector(".mobile-menu");
+    menu.classList.add("hidden");
+  }, []);
+
   const toggleMobile = () => {
     const menu = document.querySelector(".mobile-menu");
     menu.classList.toggle("hidden");
@@ -10,7 +17,7 @@ const NavBar = () => {
 
   return (
     <nav className="flex flex-col justify-center items-center">
-      <div className="flex flex-wrap justify-center sticky md:w-4/5 p-3">
+      <div className="flex flex-wrap justify-center md:w-4/5 p-3">
         <div
           className="flex
           flex-wrap

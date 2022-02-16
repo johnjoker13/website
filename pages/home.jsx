@@ -1,11 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
-import SiteHead from "./SiteHead";
+import SiteHead from "../components/SiteHead";
 
 const HomePage = () => {
   return (
     <>
-    <SiteHead routeTitle="Homepage" />
+    <SiteHead routeTitle="home" />
     <section className="flex flex-row flex-wrap justify-center pt-32">
       <section className="flex flex-col">
         <article className="text-6xl">

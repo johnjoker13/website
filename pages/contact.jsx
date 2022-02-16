@@ -1,7 +1,7 @@
 import { useFormik } from "formik";
 import * as yup from "yup";
 import { useState } from "react";
-import Header from "./Header";
+import Header from "../components/Header";
 
 const Contact = () => {
   const [message, setMessage] = useState("");

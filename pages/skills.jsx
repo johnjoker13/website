@@ -11,7 +11,7 @@ import {
   SiTailwindcss,
   SiBootstrap,
 } from "react-icons/si";
-import Header from "./Header";
+import Header from "../components/Header";
 
 const Skills = () => {
   return (

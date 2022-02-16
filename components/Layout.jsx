@@ -13,7 +13,6 @@ const Layout = ({ children }) => {
       min-h-screen
       m-0 
       p-0
-      gap-16
       max-w-screen
       bg-smooth-white
       dark:bg-smooth-black

@@ -7,7 +7,7 @@ const HomePage = () => {
     <>
     <SiteHead routeTitle="Homepage" />
     <section className="flex flex-row flex-wrap justify-center pt-40">
-      <section className="flex flex-col space-y-4 ">
+      <section className="flex flex-col">
         <article className="text-6xl">
           <h1 className="text-slate-900 dark:text-white font-bold">
             Hello! I&apos;m João, a Brazilian developer based in São Paulo.

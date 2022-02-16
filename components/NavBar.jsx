@@ -4,7 +4,6 @@ import Toggle from "../components/ThemeToggle";
 import { useEffect } from "react";
 
 const NavBar = () => {
-
   useEffect(() => {
     const menu = document.querySelector(".mobile-menu");
     menu.classList.add("hidden");
@@ -16,7 +15,8 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="
+    <nav
+      className="
       flex
       flex-col
       justify-center
@@ -25,7 +25,8 @@ const NavBar = () => {
       bg-white
       dark:bg-smooth-black
       z-40
-      border-b">
+      border-b"
+    >
       <div className="flex flex-wrap justify-center w-screen">
         <div
           className="flex
@@ -110,7 +111,22 @@ const NavBar = () => {
               </a>
             </Link>
 
-            <Link href="/contact" className="m-0">
+            <Link href="#skills">
+              <a
+                className="hover:underline
+              dark:text-white
+              hover:decoration-sky-600
+              hover:dark:decoration-smooth-grey
+              hover:transition
+              hover:delay-75
+              hover:text-black
+              hover:dark:text-white"
+              >
+                Skills
+              </a>
+            </Link>
+
+            <Link href="#contact" className="m-0">
               <a
                 className="
               hover:underline
@@ -158,6 +174,9 @@ const NavBar = () => {
         </Link>
         <Link href="#projects">
           <a>Projects</a>
+        </Link>
+        <Link href="#skills">
+          <a>Skills</a>
         </Link>
         <Link href="#contact">
           <a>Contact</a>

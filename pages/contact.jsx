@@ -6,6 +6,7 @@ import Header from "../components/Header";
 const Contact = () => {
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  // Formik field
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -17,6 +18,7 @@ const Contact = () => {
       setMessage("Form Submitted");
       setSubmitted(true);
     },
+    // Yup validation
     validationSchema: yup.object({
       name: yup.string().trim().required("Name is required"),
       email: yup

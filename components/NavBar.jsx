@@ -155,7 +155,7 @@ const NavBar = () => {
           flex
           md:hidden
           dark:text-white
-          bg-white
+          bg-smooth-white
           dark:bg-smooth-black
           flex-col 
           text-center

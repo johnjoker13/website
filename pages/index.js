@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import About from "../components/About";
+import Projects from "../components/Projects";
 import SiteHead from "../components/SiteHead";
 
 export default function Home() {
@@ -53,7 +54,7 @@ export default function Home() {
                   text-white
                   p-3
                   font-bold
-                  hover:bg-white
+                  hover:bg-smooth-grey
                   hover:text-slate-900
                   hover:border-smooth-grey
                   hover:transition
@@ -70,7 +71,7 @@ export default function Home() {
                   border
                   border-smooth-grey
                   rounded-md
-                  bg-white
+                  bg-smooth-grey
                   text-slate-900
                   font-bold
                   p-3
@@ -87,6 +88,7 @@ export default function Home() {
           </section>
         </section>
         <About />
+        <Projects />
       </main>
     </>
   );

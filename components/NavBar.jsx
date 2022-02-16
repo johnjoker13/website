@@ -78,7 +78,7 @@ const NavBar = () => {
               </a>
             </Link>
 
-            <Link href="/projects">
+            <Link href="#projects">
               <a
                 className="
               hover:underline

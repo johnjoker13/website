@@ -29,7 +29,7 @@ const Contact = () => {
   });
 
   return (
-    <div id="contact" className="pt-32">
+    <div id="contact" className="pt-32 font-bold">
       <div className="flex flex-col items-center gap-8">
         <Header 
           headerClass="text-5xl text-slate-900 dark:text-white font-bold"
@@ -58,7 +58,7 @@ const Contact = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            <span>{formik.errors.name && <div>{formik.errors.name}</div>}</span>
+            <span className="text-warning-red">{formik.errors.name && <div>{formik.errors.name}</div>}</span>
           </label>
 
           <div className="flex flex-row justify-between gap-3 flex-wrap">
@@ -73,7 +73,7 @@ const Contact = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
-              <span>
+              <span className="text-warning-red">
                 {formik.errors.email && <div>{formik.errors.email}</div>}
               </span>
             </label>
@@ -89,7 +89,7 @@ const Contact = () => {
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
               />
-              <span>
+              <span className="text-warning-red">
                 {formik.errors.company && <div>{formik.errors.company}</div>}
               </span>
             </label>
@@ -104,7 +104,7 @@ const Contact = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            <span>
+            <span className="text-warning-red">
               {formik.errors.message && <div>{formik.errors.message}</div>}
             </span>
           </label>

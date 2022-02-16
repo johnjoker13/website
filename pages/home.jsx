@@ -6,7 +6,7 @@ const HomePage = () => {
   return (
     <>
     <SiteHead routeTitle="Portfolio" />
-    <section className="flex flex-row flex-wrap justify-center pt-32">
+    <section className="flex flex-row flex-wrap justify-center pt-36">
       <section className="flex flex-col">
         <article className="text-6xl">
           <h1 className="text-slate-900 dark:text-white font-bold">

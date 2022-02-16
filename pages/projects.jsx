@@ -4,7 +4,7 @@ import Header from "../components/Header";
 const Projects = () => {
   return (
     <div id="projects" className="pt-32">
-    <section className="w-full space-y-10">
+    <section className="w-full space-y-8">
       <Header 
         headerClass="text-5xl text-slate-900 dark:text-white font-bold"
         headerText="Projects"

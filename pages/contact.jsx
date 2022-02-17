@@ -1,11 +1,18 @@
 import { useFormik } from "formik";
 import * as yup from "yup";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Header from "../components/Header";
 
 const Contact = () => {
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setSubmitted(false);
+    }, 3000);
+  }, [submitted]);
+
   // Formik field
   const formik = useFormik({
     initialValues: {
@@ -17,6 +24,7 @@ const Contact = () => {
     onSubmit: () => {
       setMessage("Form Submitted");
       setSubmitted(true);
+      formik.resetForm();
     },
     // Yup validation
     validationSchema: yup.object({
@@ -33,7 +41,7 @@ const Contact = () => {
   return (
     <div id="contact" className="pt-32 font-bold">
       <div className="flex flex-col items-center gap-8">
-        <Header 
+        <Header
           headerClass="text-5xl text-slate-900 dark:text-white font-bold"
           headerText="Contact"
         />
@@ -60,7 +68,9 @@ const Contact = () => {
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
             />
-            <span className="text-warning-red">{formik.errors.name && <div>{formik.errors.name}</div>}</span>
+            <span className="text-warning-red">
+              {formik.errors.name && <div>{formik.errors.name}</div>}
+            </span>
           </label>
 
           <div className="flex flex-row justify-between gap-3 flex-wrap">

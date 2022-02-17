@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className="pt-32 font-bold">
-      <div className="flex flex-col items-center gap-8">
+      <div className="flex flex-col gap-8">
         <Header
           headerClass="text-5xl text-slate-900 dark:text-white font-bold"
           headerText="Contact"
@@ -63,7 +63,7 @@ const Contact = () => {
               type="text"
               name="name"
               placeholder="John Doe"
-              className="p-2 rounded-lg bg-smooth-grey dark:bg-white"
+              className="p-2 rounded-lg bg-smooth-grey dark:bg-white text-black"
               value={formik.values.name}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
@@ -79,7 +79,7 @@ const Contact = () => {
               <input
                 type="email"
                 name="email"
-                className="p-2 rounded-lg bg-smooth-grey dark:bg-white"
+                className="p-2 rounded-lg bg-smooth-grey dark:bg-white text-black"
                 placeholder="john@example.com"
                 value={formik.values.email}
                 onChange={formik.handleChange}
@@ -95,7 +95,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="company"
-                className="p-2 rounded-lg bg-smooth-grey dark:bg-white"
+                className="p-2 rounded-lg bg-smooth-grey dark:bg-white text-black"
                 placeholder="myCompany"
                 value={formik.values.company}
                 onChange={formik.handleChange}
@@ -111,7 +111,7 @@ const Contact = () => {
             <textarea
               name="message"
               placeholder="Your message ..."
-              className="p-4 rounded-lg bg-smooth-grey dark:bg-white"
+              className="p-4 rounded-lg bg-smooth-grey dark:bg-white text-black"
               value={formik.values.message}
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
@@ -123,16 +123,16 @@ const Contact = () => {
           <button
             type="submit"
             className="
-          text-lg
-          flex-1
-          p-2
-          bg-slate-900
-          text-white
-          rounded-lg
-          hover:bg-smooth-grey
-          hover:text-slate-900
-          font-bold
-        "
+              text-lg
+              flex-1
+              p-2
+            bg-slate-900
+            text-white
+              rounded-lg
+            hover:bg-smooth-grey
+            hover:text-slate-900
+              font-bold
+            "
           >
             Send
           </button>

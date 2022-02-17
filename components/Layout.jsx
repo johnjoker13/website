@@ -9,7 +9,7 @@ const Layout = ({ children }) => {
         className="
       flex
       flex-col
-      min-w-screen
+      max-w-screen
       min-h-screen
       m-0 
       p-0

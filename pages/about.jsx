@@ -19,10 +19,9 @@ const About = () => {
             />
           </figure>
           <article className="flex flex-wrap">
-            <article className="text-3xl mb-6 w-full tracking-tight">
+            <article className="text-3xl mb-6">
               <p>
-                I&apos;m a front end developer and a full stack development
-                student from São Paulo. My interest in programming started back
+                My interest in programming started
                 in 2021, when I joined {" "}
                 <a
                   href="https://www.betrybe.com"
@@ -33,7 +32,7 @@ const About = () => {
                   Trybe
                 </a>
                 , a programming school. I&apos;m passionate about learning new
-                things, and solving challenging problems.
+                things, and <span>solving challenging problems.</span>
               </p>
               <p className="font-bold">Hire me?</p>
             </article>

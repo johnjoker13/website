@@ -40,7 +40,7 @@ const Contact = () => {
 
   return (
     <div id="contact" className="pt-32 font-bold">
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8 items-center">
         <Header
           headerClass="text-5xl text-slate-900 dark:text-white font-bold"
           headerText="Contact"
@@ -54,7 +54,7 @@ const Contact = () => {
         </div>
 
         <form
-          className="flex flex-col dark:bg-gray-800 bg-white gap-2 shadow-lg p-6"
+          className="flex flex-col max-w-3/6 dark:bg-gray-800 bg-white gap-2 shadow-lg p-6"
           onSubmit={formik.handleSubmit}
         >
           <label htmlFor="name" className="flex flex-col flex-1">

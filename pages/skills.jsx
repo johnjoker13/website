@@ -10,6 +10,7 @@ import {
   SiTestinglibrary,
   SiTailwindcss,
   SiBootstrap,
+  SiStyledcomponents,
 } from "react-icons/si";
 import Header from "../components/Header";
 
@@ -33,6 +34,7 @@ const Skills = () => {
         <Link href="https://redux.js.org/"><a><SiRedux /></a></Link>
         <Link href="https://jestjs.io/pt-BR/"><a><SiJest /></a></Link>
         <Link href="https://testing-library.com/"><a><SiTestinglibrary /></a></Link>
+        <Link href="https://styled-components.com/"><a><SiStyledcomponents /></a></Link>
       </section>
     </section>
     </div>

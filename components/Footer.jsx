@@ -6,8 +6,7 @@ const Footer = () => {
           flex-wrap
           md:justify-between
           justify-center
-          items-center
-          space-x-8
+          w-full
           md:w-3/6
           pb-12
           font-Nunito"
@@ -15,7 +14,7 @@ const Footer = () => {
         <div className="text-lg">
           <p className="text-slate-900 w-full dark:text-white">Built with Next.js, Tailwind CSS and &#10084;</p>
         </div>
-        <div className="flex space-x-4 text-lg font-semibold">
+        <div className="flex space-x-6 text-lg font-semibold">
           <a
             href="https://github.com/johnjoker13"
             className="hover:underline

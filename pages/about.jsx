@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div id="about" className="pt-32">
       <section className="flex flex-col gap-6">
-        <Header 
+        <Header
           headerClass="text-5xl text-slate-900 dark:text-white font-bold"
           headerText="About"
         />
@@ -19,10 +19,9 @@ const About = () => {
             />
           </figure>
           <article className="flex flex-wrap">
-            <article className="text-3xl mb-6">
+            <article className="text-lg mb-6 w-full">
               <p>
-                My interest in programming started
-                in 2021, when I joined {" "}
+                My interest in programming started in 2021, when I joined, {" "}
                 <a
                   href="https://www.betrybe.com"
                   target="_blank"
@@ -31,10 +30,10 @@ const About = () => {
                 >
                   Trybe
                 </a>
-                , a programming school. I&apos;m passionate about learning new
-                things, and <span>solving challenging problems.</span>
+                , a programming school.I&apos;m passionate about learning new
+                things, and solving challenging problems.
               </p>
-              <p className="font-bold">Hire me?</p>
+              <strong>Hire me?</strong>
             </article>
           </article>
         </article>

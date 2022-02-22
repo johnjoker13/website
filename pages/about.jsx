@@ -19,7 +19,7 @@ const About = () => {
             />
           </figure>
           <article className="flex flex-wrap">
-            <article className="text-lg mb-6 w-full">
+            <article className="text-2xl mb-6 w-full">
               <p>
                 My interest in programming started in 2021, when I joined, {" "}
                 <a

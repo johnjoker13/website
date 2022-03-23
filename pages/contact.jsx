@@ -2,6 +2,7 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 import { useEffect, useState } from "react";
 import Header from "../components/Header";
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
   const [message, setMessage] = useState("");
@@ -12,6 +13,16 @@ const Contact = () => {
       setSubmitted(false);
     }, 3000);
   }, [submitted]);
+
+  // EmailJS
+  const sendToEmail = () => {
+  emailjs.sendForm('contact_service', 'contact_form', 'egs9BLQZQx7z5qoVT')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
 
   // Formik field
   const formik = useFormik({
@@ -24,6 +35,7 @@ const Contact = () => {
     onSubmit: () => {
       setMessage("Form Submitted");
       setSubmitted(true);
+      sendToEmail();
       formik.resetForm();
     },
     // Yup validation

@@ -2,7 +2,7 @@ import { useFormik } from "formik";
 import * as yup from "yup";
 import { useEffect, useState } from "react";
 import Header from "../components/Header";
-import emailjs from '@emailjs/browser';
+import emailjs from "@emailjs/browser";
 
 const Contact = () => {
   const [message, setMessage] = useState("");
@@ -15,14 +15,6 @@ const Contact = () => {
   }, [submitted]);
 
   // EmailJS
-  const sendToEmail = () => {
-  emailjs.sendForm('contact_service', 'contact_form', 'egs9BLQZQx7z5qoVT')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-  };
 
   // Formik field
   const formik = useFormik({
@@ -32,13 +24,7 @@ const Contact = () => {
       message: "",
       company: "",
     },
-    onSubmit: () => {
-      setMessage("Form Submitted");
-      setSubmitted(true);
-      sendToEmail();
-      formik.resetForm();
-    },
-    // Yup validation
+
     validationSchema: yup.object({
       name: yup.string().trim().required("Name is required"),
       email: yup
@@ -48,6 +34,26 @@ const Contact = () => {
       company: yup.string().trim().required("Company is required"),
       message: yup.string().trim().required("Message is required"),
     }),
+
+    onSubmit: (object) => {
+        emailjs
+          .send(
+            "contact_service",
+            "contact_form",
+            object,
+            "egs9BLQZQx7z5qoVT"
+          )
+          .then((result) => {
+            setMessage("Form Submitted");
+            setSubmitted(true);
+            formik.resetForm();
+            console.log(result.text);
+          }).catch ((error) => {
+        console.log(error);
+        setMessage("");
+        setSubmitted(false);
+      })
+    },
   });
 
   return (

@@ -16,6 +16,7 @@ const About = () => {
               alt="joao's photo"
               width="400"
               height="400"
+              className="border rounded-md"
             />
           </figure>
           <article className="flex flex-wrap">
